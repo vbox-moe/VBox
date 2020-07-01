@@ -10,6 +10,10 @@
     "vuepress",
     "vbox"
   ],
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
   "author": "Il Harper",
   "license": "MIT",
   "bugs": {
@@ -23,6 +27,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-vue": "^5.2.3",
     "prettier": "^1.18.2",
-    "vue-eslint-parser": "^7.1.0"
+    "vue-eslint-parser": "^7.1.0",
+    "vuepress": "^1.5.2"
   }
 }
