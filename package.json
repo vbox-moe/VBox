@@ -6,11 +6,23 @@
     "type": "git",
     "url": "git+https://github.com/vbox-moe/VBox.git"
   },
-  "keywords": [],
+  "keywords": [
+    "vuepress",
+    "vbox"
+  ],
   "author": "Il Harper",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vbox-moe/VBox/issues"
   },
-  "homepage": "https://github.com/vbox-moe/VBox#readme"
+  "homepage": "https://github.com/vbox-moe/VBox#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.4.0",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "prettier": "^1.18.2",
+    "vue-eslint-parser": "^7.1.0"
+  }
 }
