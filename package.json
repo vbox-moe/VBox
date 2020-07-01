@@ -1,0 +1,16 @@
+{
+  "name": "VBox",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbox-moe/VBox.git"
+  },
+  "keywords": [],
+  "author": "Il Harper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vbox-moe/VBox/issues"
+  },
+  "homepage": "https://github.com/vbox-moe/VBox#readme"
+}
