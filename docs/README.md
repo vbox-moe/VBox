@@ -1,5 +1,4 @@
 ---
-home: true
 metaTitle: VBox
 ---
 
