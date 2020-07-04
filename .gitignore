@@ -76,3 +76,5 @@ sw.*
 
 # Vim swap files
 *.swp
+
+docs/.vuepress/dist
