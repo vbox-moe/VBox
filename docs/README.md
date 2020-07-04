@@ -1,5 +1,6 @@
 ---
 metaTitle: VBox
+footer: MIT Licensed | © 2020 VBox / Il Harper
 ---
 
 # 欢迎回来！
