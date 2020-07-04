@@ -1,0 +1,3 @@
+[submodule "docs/VBox/Icons"]
+	path = docs/VBox/Icons
+	url = https://github.com/vbox-moe/Icons.git
