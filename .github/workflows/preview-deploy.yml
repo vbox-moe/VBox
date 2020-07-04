@@ -1,0 +1,40 @@
+name: 'Preview Deploy'
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: NPM Install
+        run: |
+          npm ci
+        env:
+          CI: true
+      - name: Build
+        run: |
+          npm run build
+      - name: Deploy
+        env:
+          VBOX_DEPLOY_TOKEN: ${{ secrets.VBOX_DEPLOY_TOKEN }}
+        run: |
+          cd docs/.vuepress/dist
+          git config --global user.email "afanyiyu@hotmail.com"
+          git config --global user.name "VBox Deploy Bot"
+          git init
+          git add -A
+          git commit -m 'chore':' 🤖 GitHub Pages Deploy in GitHub Actions'
+          git push -f https://${VBOX_DEPLOY_TOKEN}@github.com/vbox-moe/vbox-moe.github.io.git master
