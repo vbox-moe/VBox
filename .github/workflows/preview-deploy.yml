@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          submodules: true
+          submodules: recursive
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -36,6 +36,7 @@ jobs:
           git config --global user.email "afanyiyu@hotmail.com"
           git config --global user.name "VBox Deploy Bot"
           git init
+          git rm --cached Icons
           git add -A
           git commit -m 'chore':' 🤖 GitHub Pages Deploy in GitHub Actions'
           git push -f https://${VBOX_DEPLOY_TOKEN}@github.com/vbox-moe/vbox-moe.github.io.git master
