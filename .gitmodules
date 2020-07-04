@@ -1,3 +1,3 @@
-[submodule "docs/VBox/Icons"]
-	path = docs/VBox/Icons
+[submodule "docs/.vuepress/public/Icons"]
+	path = docs/.vuepress/public/Icons
 	url = https://github.com/vbox-moe/Icons.git
