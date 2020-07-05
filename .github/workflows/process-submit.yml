@@ -20,7 +20,7 @@ jobs:
         run: npm i
 
       - name: Commit Branch
-        run: node submit.js
+        run: node ci/submit.js
         env:
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_BODY: ${{ github.event.issue.body }}
