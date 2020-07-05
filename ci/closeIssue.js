@@ -1,4 +1,4 @@
-const got = require('got')
+const axios = require('axios')
 
 const { NUMBER, VBOX_DEPLOY_TOKEN } = process.env
 
@@ -7,17 +7,20 @@ const log = (msg) => {
   return msg
 }
 
-got(log(`https://api.github.com/repos/vbox-moe/VBox/pulls/${NUMBER}`))
-  .json()
-  .then(async ({ head: { label } }) => {
+axios
+  .get(log(`https://api.github.com/repos/vbox-moe/VBox/pulls/${NUMBER}`))
+  .then(async (response) => {
+    const {
+      head: { label }
+    } = JSON.parse(response.data)
     if (label.startsWith('vbox-moe:submit/')) {
       const issueNumber = Number(label.replace('vbox-moe:submit/', ''))
-      await got.post(
+      await axios.post(
         log(
           `https://api.github.com/repos/vbox-moe/VBox/issues/${issueNumber}/comments`
         ),
         {
-          json: {
+          data: {
             body: `Closing since #${NUMBER} is closed.`
           },
           headers: {
@@ -25,10 +28,10 @@ got(log(`https://api.github.com/repos/vbox-moe/VBox/pulls/${NUMBER}`))
           }
         }
       )
-      await got.patch(
+      await axios.patch(
         log(`https://api.github.com/repos/vbox-moe/VBox/issues/${issueNumber}`),
         {
-          json: {
+          data: {
             state: 'closed'
           },
           headers: {
