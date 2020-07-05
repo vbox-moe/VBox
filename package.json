@@ -30,7 +30,7 @@
     "prettier": "^1.18.2",
     "vue-eslint-parser": "^7.1.0",
     "vuepress": "^1.5.2",
-    "vuepress-plugin-vbox": "^0.1.5",
+    "vuepress-plugin-vbox": "^0.1.6",
     "vuepress-theme-vbox": "^0.1.6"
   },
   "dependencies": {
