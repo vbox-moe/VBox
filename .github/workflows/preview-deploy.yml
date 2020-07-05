@@ -59,7 +59,7 @@ jobs:
           VBOX_DEPLOY_TOKEN: ${{ secrets.VBOX_DEPLOY_TOKEN }}
         run: |
           cd docs/.vuepress/dist
-          git config --global user.email "afanyiyu@hotmail.com"
+          git config --global user.email "vboxbot@outlook.com"
           git config --global user.name "VBox Deploy Bot"
           git init
           rm -f Icons/.git
