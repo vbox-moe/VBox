@@ -13,6 +13,7 @@ module.exports = {
         secret: '36867f1788921671d595a5ab0166661ca92c98cd'
       }
     },
+    host: 'https://vbox.moe',
     repo: 'vbox-moe/VBox',
     repoLabel: '查看文档',
     docsDir: 'docs',
