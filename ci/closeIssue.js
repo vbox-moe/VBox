@@ -12,7 +12,7 @@ axios
   .then(async (response) => {
     const {
       head: { label }
-    } = JSON.parse(response.data)
+    } = response.data
     if (label.startsWith('vbox-moe:submit/')) {
       const issueNumber = Number(label.replace('vbox-moe:submit/', ''))
       await axios.post(
@@ -20,22 +20,22 @@ axios
           `https://api.github.com/repos/vbox-moe/VBox/issues/${issueNumber}/comments`
         ),
         {
-          data: {
-            body: `Closing since #${NUMBER} is closed.`
-          },
+          body: `Closing since #${NUMBER} is closed.`
+        },
+        {
           headers: {
-            authorization: `Bearer ${VBOX_DEPLOY_TOKEN}`
+            Authorization: `token ${VBOX_DEPLOY_TOKEN}`
           }
         }
       )
       await axios.patch(
         log(`https://api.github.com/repos/vbox-moe/VBox/issues/${issueNumber}`),
         {
-          data: {
-            state: 'closed'
-          },
+          state: 'closed'
+        },
+        {
           headers: {
-            authorization: `Bearer ${VBOX_DEPLOY_TOKEN}`
+            Authorization: `token ${VBOX_DEPLOY_TOKEN}`
           }
         }
       )
