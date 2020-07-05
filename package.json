@@ -32,5 +32,7 @@
     "vuepress-plugin-vbox": "^0.1.5",
     "vuepress-theme-vbox": "^0.1.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "got": "^9.6.0"
+  }
 }
