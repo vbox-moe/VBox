@@ -1,0 +1,33 @@
+name: Process Submit
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  publish:
+    name: Process Submit
+    if: github.event_name == 'issues'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: npm install
+        run: npm i
+
+      - name: Commit Branch
+        run: node submit.js
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          VBOX_DEPLOY_TOKEN: ${{ secrets.VBOX_DEPLOY_TOKEN }}
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.VBOX_DEPLOY_TOKEN }}
+          branch: ${{ format('submit/{0}', github.event.issue.number) }}
