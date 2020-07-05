@@ -17,4 +17,3 @@ jobs:
         with:
           github_token: ${{ secrets.VBOX_DEPLOY_TOKEN }}
           pr_label: 'bot'
-          pr_title: 'Pulling ${{ github.ref }} into master'
