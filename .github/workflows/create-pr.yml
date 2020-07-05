@@ -17,6 +17,4 @@ jobs:
         with:
           github_token: ${{ secrets.VBOX_DEPLOY_TOKEN }}
           pr_label: 'bot'
-          # pr_title: "Pulling ${{ github.ref }} into master" # Title of pull request
-          # pr_body: ":crown: *An automated PR*"              # Full markdown support, requires pr_title to be set
-          # pr_template: ".github/PULL_REQUEST_TEMPLATE.md"   # Path to pull request template, requires pr_title to be set, excludes pr_body
+          pr_title: 'Pulling ${{ github.ref }} into master'
