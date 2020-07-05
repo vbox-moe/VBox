@@ -1,0 +1,28 @@
+name: 'Close Issue'
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  close:
+    name: Close Issue
+    if: github.event_name == 'pull_request' && !github.event.pull_request.merged
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Close Issue
+        run: node ci/closeIssue.js
+        env:
+          VBOX_DEPLOY_TOKEN: ${{ secrets.VBOX_DEPLOY_TOKEN }}
+          NUMBER: ${{ github.event.number }}
