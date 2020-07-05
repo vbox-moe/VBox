@@ -28,24 +28,16 @@ const gitExec = async (params) => {
     '-----BEGIN SUBMIT BLOCK-----'
   )[1]
   if (block) {
-    await decodeBase64(block)
+    console.log(
+      `Submit block finded. Start processing with issue#${ISSUE_NUMBER}`
+    )
+    console.log('BLOCK:' + block)
+    const blockData = decodeBase64(block)
       .split(':')
-      .map(([path, data]) => [decodeBase64(path), decodeBase64(data)])
-      .map(([postPath, data]) => async () => {
-        console.log('PATH: ' + postPath)
-        // console.log('DATA: ' + data)
-        const path = join('docs', postPath)
-        // if (command === 'delete') {
-        //   await unlink(path)
-        //   console.log('delete', path)
-        // }
-        // if (command === 'put') {
-        //   await writeFile(path, content)
-        //   console.log('put', path)
-        // }
-        await writeFile(path, data)
-      })
-      .reduce((p, f) => p.then(f), Promise.resolve())
+      .map((x) => decodeBase64(x))
+    console.log('PATH: ' + blockData[0])
+    const path = join('docs', blockData[0])
+    await writeFile(path, blockData[1])
     await gitExec(['push', '--set-upstream', remote, branchName])
     await gitExec(['add', 'docs'])
     await gitExec([
