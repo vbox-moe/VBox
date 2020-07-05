@@ -32,6 +32,8 @@ const gitExec = async (params) => {
       .split(':')
       .map(([path, data]) => [decodeBase64(path), decodeBase64(data)])
       .map(([postPath, data]) => async () => {
+        console.log('PATH: ' + postPath)
+        // console.log('DATA: ' + data)
         const path = join('docs', postPath)
         // if (command === 'delete') {
         //   await unlink(path)
