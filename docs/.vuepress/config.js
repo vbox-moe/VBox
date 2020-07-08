@@ -13,7 +13,7 @@ module.exports = {
         secret: '36867f1788921671d595a5ab0166661ca92c98cd'
       }
     },
-    publicToken: 'd72d52658cfd3244fba4fb17e47505db6aa5c013'
+    publicToken: 'd72d52658cfd3244fba4fb17e47505db6aa5c013',
     host: 'https://vbox.moe',
     repo: 'vbox-moe/VBox',
     repoLabel: '查看文档',
