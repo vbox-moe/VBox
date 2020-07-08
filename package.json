@@ -1,7 +1,7 @@
 {
   "name": "vbox",
   "private": "true",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "",
   "repository": {
     "type": "git",
@@ -30,8 +30,8 @@
     "prettier": "^1.18.2",
     "vue-eslint-parser": "^7.1.0",
     "vuepress": "^1.5.2",
-    "vuepress-plugin-vbox": "^0.1.7",
-    "vuepress-theme-vbox": "^0.1.10"
+    "vuepress-plugin-vbox": "^0.2.1",
+    "vuepress-theme-vbox": "^0.2.1"
   },
   "dependencies": {
     "axios": "^0.19.2",
