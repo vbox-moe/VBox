@@ -25,23 +25,37 @@ vNerve 旨在提供一个与虚拟主播相关的综合数据源，且希望将�
 
 非实时性数据将以 HTTP API 形式提供，使用 GraphQL 协议、JSON 数据格式。
 
-## 组件
+## 结构与组件
 
-现阶段 vNerve 的开发重心集中在其目前唯一的组件 `vNerveBiLiveReceptor`。 
+vNerve 具有高度模块化的结构，但亦具有方便的接口来统一地获取来自各个数据源的数据。对于实时性数据，vNerve 具有如下结构：
 
-### vNerveBiLiveReceptor
+```
+Receptor -> CNS -> (NeuronWire) -> Effector
+            ↓
+            vNerve Memory
+```
 
-vNerveBiLiveReceptor 用于聚合从 Bilibili 直播的实时弹幕数据源获取到的数据。其包括但不限于：
+其中：
 
-- 直播弹幕
-- 礼物信息
-- 醒目留言（即“Super Chat”）
-- 直播间人气值
-- 开播、下播与被切断直播
-- 房间信息变更（标题与分区）
-- 舰长购买与续费
-- 欢迎信息（欢迎老爷与舰长）
-- 用户封禁与踢出
-- 房间封禁、警告与地区限制
+- Receptor（感受器）用于从各个数据源获取数据并统一化数据格式、结构；例如 BiLiveReceptor
+- CNS（中枢神经系统）在系统中唯一，用于路由消息并递送到下游应用。这一部分由一个消息队列中间人实现
+- NeuronWire 为一些平台（目前仅 JavaScript）提供了更加便利的连接到 CNS 的方式，类似于一个 SDK，这使得下游开发者不需要关心连接细节等内容
+- Effector（效应器）即下游应用的开发者与 vNerve 交互的部分，为您的应用程序注入数据
 
-// 怎么弄个链接到里面的文档？
+对于非实时性数据，vNerve 具有以下结构：
+
+// TODO
+
+而在 vNerve 中，由于数据源多种多样，因此每一种数据源都对应一种数据源组件。例如哔哩哔哩直播的实时弹幕处理即对应 BiLive 组件。为了处理来自各个组件的数据，下游开发者需要阅读各个组件的文档。
+
+- BiLive：(// TODO link)
+
+## Roadmap
+
+目前 Project vNerve 正在构建 BiLive 与部署 CNS 系统。在 BiLive 实现稳定、高可用的数据提供后，我们会考虑哔哩哔哩的主站相关的数据更新（例如粉丝量等）。
+
+## Contribute
+
+vNerve 所有代码均开源，欢迎您参与开发。
+
+// TODO repositories

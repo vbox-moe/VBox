@@ -3,8 +3,6 @@ pageIndex: 1
 title: 开始使用
 ---
 
-# 开始使用
-
 ## 实时性数据
 
 对于 JavaScript 开发者，您可以直接使用 vNerveNeuronWire 库（TODO: @镁矿）拉取实时性数据。对于其他语言开发者，您可参考以下教程。
@@ -33,18 +31,13 @@ title: 开始使用
 
 ### 明确需要的数据
 
-vNerve 通过设置消息队列的 Routing Key 来按照需求投递消息。这使得您可以只关注于您感兴趣的消息类型，避免不必要的带宽浪费。同时，Routing Key 也支持通配符。因此，您需要首先明确需要的消息类型。以下是目前可以从实时性数据获取到的数据。
+vNerve 通过设置消息队列的 Routing Key 来按照需求投递消息。这使得您可以只关注于您感兴趣的消息类型，避免不必要的带宽浪费。同时，Routing Key 也支持通配符。
 
-#### vNerve BiLive
+所有 Routing Key 均以 `<src>.` 开头，其中 `src` 为来源组件的简写，例如 BiLive 数据源的简写为 `blv`。
 
-vNerve BiLive 的所有数据来自哔哩哔哩直播的直播间实时数据接口，其 Routing Key 格式服从 `blv.<room_id>.<type>`，其中 `room_id` 为**房间号**（长房间号，非短房间号或主播 UID），而 `type` 为下列值之一（关于表格中的 Protobuf 路径与类型，请参照下方的说明）。
+欲了解各个数据源的 Routing Key 格式，请参阅各个数据源的文档。
 
-| type                                               | 描述                 | Protobuf 路径         | Protobuf 类型                            | Routing Key 示例   |
-| -------------------------------------------------- | -------------------- | --------------------- | ---------------------------------------- | ------------------ |
-| danmaku                                            | 直播间弹幕           | .user_message.danmaku | RoomMessage UserMessage DanmakuMessage   | blv.123456.danmaku |
-| gift                                               | 直播间礼物           | .user_message.gift    | RoomMessage UserMessage GiftMessage      | blv.123456.gift    |
-| sc                                                 | 醒目留言(Super Chat) | .user_message.sc      | RoomMessage UserMessage SuperChatMessage | blv.123456.sc      |
-| // 未完待续 TODO：建一个新的页面描述 BiLive 的细节 |                      |                       |                                          |                    |
+- vNerve BiLive: （链接）
 
 ### 拉取数据
 
@@ -136,4 +129,4 @@ protobuf.load("vNerve_Proto.json", function(err, root) { // 应该在最开始�
 
 // TODO测试一下
 
-关于如何使用解析后的结构，请参阅对应组件的文档。例如 BiLive。(TODO link)
+关于如何使用解析后的结构，请参阅对应组件的文档。例如 BiLive。(TODO link) **注意：对于使用 vNerveNeuronWire 的用户而言，数据结构略有优化，请参照vNerveNeuronWire 的文档(todo link)来处理。**
