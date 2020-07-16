@@ -164,12 +164,13 @@ switch (rootMessage.PayloadCase)
 
 ### 消息类型
 
-下面将会详细介绍各个消息类型。在阅读下述文档时，您应该同时参考 vNerve Transmitter 中的 Proto 源文件。部分注释写在源文件中，且为了避免让本文过于冗长部分字段等在本文中略去不写。
+下面仅会列出各个消息类型。在阅读下述文档时，您应该同时参考 vNerve Transmitter 中的 Proto 源文件。大多数字段的注释等均写在文档中。另外，下面出现的所有信息在 Protobuf 源文件中都有一份，且可能更新。
 
 #### 凡例
 
 - Protobuf 类型均在 `vNerve.bilibili.live` 命名空间下
 - Protobuf 路径均以 `RoomMessage` 作为根
+- 所有的时间戳均为以秒为单位的 UNIX 时间戳，UTC+8 时区。
 
 #### 用户相关消息
 
@@ -193,3 +194,129 @@ Protobuf 路径 - .user_message.user
 ```
 
 注意：**`User` 类型中仅有 `uid` 保证在所有消息中均可用**。大部分消息中 `name` 可用。其他字段的可用情况会在下面的文档中标明，若未标明则表示此消息中 `user` 对应字段没有数据。
+
+#####  弹幕消息 - Danmaku
+
+```
+Protobuf 类型 - DanmakuMessage
+Protobuf 路径 - .user_message.danmaku
+提供的额外 User 字段 : admin, live_vip_level, user_level_border_color, title, medal, guard_level, phone_verified, regular_user
+```
+
+您可以用 `lottery_type` 过滤节奏风暴、抽奖等可能导致刷屏的消息。注意：`regular_user` 并不可靠。
+
+##### 礼物消息 - Gift
+
+```
+Protobuf 类型 - GiftMessage
+Protobuf 路径 - .user_message.gift
+提供的额外 User 字段 : avatar_url
+```
+
+某些情况下礼物价格可能打折，此时 `single_price_coin_raw` 为未打折的价格。
+
+##### 醒目留言 - SuperChat
+
+```
+Protobuf 类型 - SuperChatMessage
+Protobuf 路径 - .user_message.super_chat
+提供的额外 User 字段 : avatar_url, admin, user_level, user_level_border_color, admin, live_vip_level, title, medal, guard_level
+```
+
+`id` 为 醒目留言 ID，可用于后续接收删除醒目留言的消息；`token` 作用未知。
+
+##### 大航海/上舰 - NewGuard
+
+```
+Protobuf 类型 - NewGuardMessage
+Protobuf 路径 - .user_message.new_guard
+提供的额外 User 字段 : guard_level
+```
+
+`buy_type` 标识此次操作为新舰长还是续费舰长。`duration_level` 标识的是本次购买/续费是按周购买还是按月，这一字段亦为 `count` 的单位。
+
+##### 欢迎老爷 - WelcomeVip
+
+```
+Protobuf 类型 - WeicomeVIPMessage
+Protobuf 路径 - .user_message.welcome_vip
+提供的额外 User 字段 : admin
+```
+
+`admin` 有效性存疑。
+
+##### 欢迎舰长 - WelcomeGuard
+
+```
+Protobuf 类型 - WeicomeGuardMessage
+Protobuf 路径 - .user_message.welcome_guard
+提供的额外 User 字段 : guard_level
+```
+
+##### 用户禁言 - UserBlocked
+
+```
+Protobuf 类型 - UserBlockedMessage
+Protobuf 路径 - .user_message.user_blocked
+提供的额外 User 字段 : 无
+User 的 name 字段不可用
+```
+
+#### 直播间人气值更新 - PopularityChange
+
+```
+Protobuf 类型 - PopularityChangedMessage
+Protobuf 路径 - .popularity_change
+```
+
+此消息每房间约一分钟发送一条。
+
+#### 上下播 - LiveStatus
+
+```
+Protobuf 类型 - LiveStatusChangedMessage
+Protobuf 路径 - .live_status
+```
+
+`message` 仅在房间被切断（`status` 为 `CUT_OFF`）时可用。
+
+// TODO 被cutoff的时候会发送 preparing吗，以及round的意义
+
+#### 房间信息 - InfoChange
+
+```
+Protobuf 类型 - RoomInfoChangedMessage
+Protobuf 路径 - .info_change
+```
+
+该消息分为三种，您应该判断 `oneof changed` 的类型来判断修改了何种消息。
+
+- `base_info`：直播间标题与分区
+- `background_url`：直播间背景图
+- `skin_id`：直播间皮肤
+- `admin`：直播间房管列表
+
+#### 房间被锁定 - RoomLocked
+
+```
+Protobuf 类型 - RoomLockedMessage
+Protobuf 路径 - .room_locked
+```
+
+#### 房间受限 - RoomLimited
+
+```
+Protobuf 类型 - RoomLimitedMessage
+Protobuf 路径 - .room_limited
+```
+
+发生情况暂时不明。可能在播放带版权的内容时出现，亦可能进入某些特殊分区（放映厅等）时候出现。
+
+#### 删除醒目留言 - SuperChatDelete
+
+```
+Protobuf 类型 - SuperChatDeleteMessage
+Protobuf 路径 - .superchat_delete
+```
+
+其中 `id` 列表字段对应前述收到的 Super Chat 消息中的 `id` 字段。

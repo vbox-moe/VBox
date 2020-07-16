@@ -130,3 +130,4 @@ protobuf.load("vNerve_Proto.json", function(err, root) { // 应该在最开始�
 // TODO测试一下
 
 关于如何使用解析后的结构，请参阅对应组件的文档。例如 BiLive。(TODO link) **注意：对于使用 vNerveNeuronWire 的用户而言，数据结构略有优化，请参照vNerveNeuronWire 的文档(todo link)来处理。**
+
