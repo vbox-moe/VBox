@@ -29,4 +29,8 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 <select-button title="用户指南" description="Ruminoid 及其子产品的用户指南和帮助说明。" href="Guide/"></select-button>
 
-<select-button title="开发者指南" description="面向开发者的 Ruminoid 指南。" href="Developer/"></select-button>
+<select-button title="开发者指南" description="面向开发者的 Ruminoid 指南。" href="Develop/"></select-button>
+
+## 交流和讨论
+
+Ruminoid 相关交流和字幕相关交流可以加入群聊 470394928，Ruminoid 开发者可以加入群聊 1053354128。
