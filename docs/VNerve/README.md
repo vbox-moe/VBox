@@ -100,6 +100,4 @@ Receptor -> CNS -> (NeuronWire) -> Effector
 
 ## Contribute
 
-vNerve 所有代码均开源，欢迎您参与开发。
-
-// TODO repositories
+vNerve 所有代码均开源，欢迎您参与开发。[查看我们的组织与仓库](/VNerve/GitHub.html)。
