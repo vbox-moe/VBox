@@ -7,9 +7,51 @@ title: 更新历史
 
 特定于通道的更新会在版本的右上角显示 Badge。标为“已弃用”的版本不推荐下载，因为这些版本的自动更新服务已经失效，或在更新到新版本之后旧的偏好设置会被清除。
 
+## v0.2.4 <Badge type="warning" text="dogfood"/>
+
+### Ruminoid Tapper Timer
+
+Ruminoid Tapper Timer 现已发布！使用 Tapper Timer 可以一边看直播一边打轴，快来尝试吧。
+
+### Ruminoid
+
+- 添加了新的 KeyTap 支持库。
+
+## v0.2.3 <Badge type="tip" text="beta"/>
+
+2020-08-07 发布
+
+### Ruminoid LIVE
+
+Ruminoid LIVE 现已发布！快来使用 LIVE 在 OBS 中展示特效字幕吧。
+
+### Ruminoid Dashboard
+
+改进：
+
+- 优化了应用启动逻辑。
+
+### Ruminoid Trimmer
+
+改进：
+
+- 优化了应用启动逻辑。
+
+- 为控件按钮应用了新的样式。
+
+- 更新了控件按钮的本地化字串。
+
+- 移除了部分无用代码。
+
+### Ruminoid
+
+改进：
+
+- 从这个版本开始，Ruminoid 安装程序将会显示 Ruminoid 图标。
+
 ## v0.2.2
 
-2020-07 发布
+2020-07-22 发布
 
 ### Ruminoid Dashboard
 
