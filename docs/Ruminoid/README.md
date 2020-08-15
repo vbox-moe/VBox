@@ -2,7 +2,7 @@
 home: true
 heroImage: /Icons/Icons/Ruminoid/Ruminoid.Colored.Transparent.png
 heroText: Ruminoid
-tagline: 高效、现代的字幕解决方案。
+tagline: 高效、现代的视觉工作解决方案。
 actionText: 立即下载 →
 actionLink: /Ruminoid/#下载
 pageIndex: 10
