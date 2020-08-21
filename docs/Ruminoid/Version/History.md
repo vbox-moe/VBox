@@ -7,9 +7,9 @@ title: 更新历史
 
 特定于通道的更新会在版本的右上角显示 Badge。标为“已弃用”的版本不推荐下载，因为这些版本的自动更新服务已经失效，或在更新到新版本之后旧的偏好设置会被清除。
 
-## v0.2.5 <Badge type="warning" text="dogfood"/>
+## v0.2.6 <Badge type="warning" text="dogfood"/>
 
-Build 8
+Build 9
 
 ### Ruminoid Tapper Timer
 
@@ -18,6 +18,32 @@ Ruminoid Tapper Timer 现已发布！使用 Tapper Timer 可以一边看直播�
 ### Ruminoid
 
 - 添加了新的 KeyTap 支持库。
+
+## v0.2.5
+
+Build 8·2020-08-21 发布
+
+### Ruminoid SubLight Classic
+
+Ruminoid SubLight Classic 现已发布！快来使用 SubLight 在 After Effects 和 Premiere 中导入、预览和渲染你的特效字幕吧。
+
+### Ruminoid Plugin Manager
+
+Plugin Manager 现已发布！您可以使用它安装、升级和管理您的 Ruminoid 插件。
+
+### Ruminoid Dashboard
+
+改进：
+
+- 现在，Dashboard 中的设置将会应用到所有 Ruminoid 产品。
+
+### Ruminoid
+
+改进：
+
+- 添加了高性能的下载器组件。
+
+- 添加了部分公共窗口组件。
 
 ## v0.2.4
 
