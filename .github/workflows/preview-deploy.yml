@@ -67,4 +67,4 @@ jobs:
           rm -f Icons/.git
           git add -A
           git commit -m 'chore':' 🤖 GitHub Pages Deploy in GitHub Actions'
-          git push -f https://${VBOX_DEPLOY_TOKEN}@github.com/vbox-moe/vbox-moe.github.io.git master
+          git push -f https://${VBOX_DEPLOY_TOKEN}@github.com/Afanyiyu/VBox-Deploy.git master
