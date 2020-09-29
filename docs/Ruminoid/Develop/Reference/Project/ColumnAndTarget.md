@@ -15,19 +15,19 @@ title: 列和目标
 
 该列的标题。
 
-### `transformations`
+### `transform`
 
-参见「转换（Transformations）」。
+参见「转换（Transform）」。
 
 ### `target`
 
 参见「目标（Target）」。
 
-## 转换（Transformation）
+## 转换（Transform）
 
-转换（Transformation）是一个长度为 5 的 JSON 数组，它存储了该列的转换链。
+转换（Transform）是一个可为空的对象，它存储了该列上要进行的值转换的操作。
 
-**Ruminoid Studio 在进行「渲染（Render）」或「生成（Build）」时，会将行（Row）中的 `data` 字段中的 `text` 字段按顺序分别使用这 5 个「转换（Transformation）」进行转换，转换之后的结果交给下一个转换，最后交给「目标（Target）」进行字幕的渲染。**
+**Ruminoid Studio 在进行「渲染（Render）」或「生成（Build）」时，若该列的转换存在，则会将行（Row）中的 `data` 字段中的 `text` 字段使用「转换（Transform）」对值进行修改，之后再交给「目标（Target）」进行字幕的渲染。**
 
 转换由「Ruminoid 插件（RMX）」通过实现 `ITransform` 接口提供，如 `JavaScriptTransform` 等。
 
