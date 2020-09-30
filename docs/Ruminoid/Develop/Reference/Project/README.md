@@ -83,4 +83,4 @@ Ruminoid Studio 会去解析它们所支持的版本，或是版本 0。若某�
 
 所有版本的 Ruminoid Studio 都会尝试解析版本 0 的 Ruminoid Project，但版本 0 只应该在测试项目文件或兼容性的时候使用。
 
-目前，所有位于 studio/stable 上的 Ruminoid Studio 版本都只支持版本 1。
+目前，所有位于 stable 和 newrelease 上的 Ruminoid Studio 版本都只支持版本 1。

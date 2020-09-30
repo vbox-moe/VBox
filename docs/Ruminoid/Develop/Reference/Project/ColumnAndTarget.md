@@ -53,11 +53,11 @@ Ruminoid Studio 只会同时渲染一列的内容。`textColumn` 指示了 Rumin
 
 ```ts
 declare interface Row {
-	data: Array<DataItem>
+	data: Array<RumiItem>
 }
 
-declare interface DataItem {
-    id: string // 列 ID
-    text: string // 该列的文本
+declare interface RumiItem {
+    id: string // ID
+    text: string // 文本
 }
 ```
