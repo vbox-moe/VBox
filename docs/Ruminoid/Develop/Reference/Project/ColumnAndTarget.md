@@ -27,7 +27,7 @@ title: 列和目标
 
 转换（Transform）是一个可为空的对象，它存储了该列上要进行的值转换的操作。
 
-**Ruminoid Studio 在进行「渲染（Render）」或「生成（Build）」时，若该列的转换存在，则会将行（Row）中的 `data` 字段中的 `text` 字段使用「转换（Transform）」对值进行修改，之后再交给「目标（Target）」进行字幕的渲染。**
+**Ruminoid Studio 在进行「渲染（Render）」或「生成（Build）」时，若该列的转换存在，则会将行（Row）中的 `items` 字段中的 `text` 字段使用「转换（Transform）」对值进行修改，之后再交给「目标（Target）」进行字幕的渲染。**
 
 转换由「Ruminoid 插件（RMX）」通过实现 `ITransform` 接口提供，如 `JavaScriptTransform` 等。
 
@@ -45,19 +45,20 @@ Ruminoid Studio 只会同时渲染一列的内容。`textColumn` 指示了 Rumin
 
 `effectColumn` 则与 ASS 中的 Effect 列兼容，指示该行的效果类型。
 
-## 行（Row）中的 `data`
+## 行（Row）中的 `items`
 
-既然一个 Ruminoid Project 文件中可以有多个列，那么每一行中就需要存储每一列的信息了。这些数据存储在行（Row）中的 `data` 字段。
+既然一个 Ruminoid Project 文件中可以有多个列，那么每一行中就需要存储每一列的信息了。这些数据存储在行（Row）中的 `items` 字段。
 
-`data` 字段是一个 JSON Array，里面包含了含有信息的各列的信息。
+`items` 字段是一个 JSON Array，里面包含了含有信息的各列的信息。
 
 ```ts
 declare interface Row {
-	data: Array<RumiItem>
+	items: Array<RumiItem>
 }
 
 declare interface RumiItem {
     id: string // ID
+    column: string // 列 ID
     text: string // 文本
 }
 ```

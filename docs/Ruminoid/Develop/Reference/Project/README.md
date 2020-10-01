@@ -61,9 +61,9 @@ declare interface Row {
 
 ### `end`
 
-### `data`
+### `items`
 
-有关 `data` 字段的详细内容，请参见「[列和目标](./ColumnAndTarget.html)」。
+有关 `items` 字段的详细内容，请参见「[列和目标](./ColumnAndTarget.html)」。
 
 ## 列（Column）
 
