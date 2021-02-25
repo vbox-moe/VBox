@@ -11,11 +11,29 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 ## 下载
 
-### 下载 Ruminoid
+### 下载 Ruminoid（v0.2.x）
 
 轻敲下面的按钮即可下载 Ruminoid 的最新版本。
 
 <select-button title="Ruminoid" description="最新版本" href="https://update.ruminoid.world/stable/RuminoidSetup.exe" outer></select-button>
+
+有关 Ruminoid（v0.2.x）或 Ruminoid Studio（v0.3.x）的更新历史，请参见 [更新历史](./Version/History.html)。
+
+### 下载 Ruminoid Toolbox
+
+轻敲对应按钮即可下载 Ruminoid Toolbox 的最新版本。
+
+<div style="display:flex;justify-content:space-between;flex-wrap:wrap;">
+  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Windows" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip" outer></select-button>
+  <br>
+  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="MacOS" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip" outer></select-button>
+  <br>
+  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Linux" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip" outer></select-button>
+</div>
+
+若要更新 Ruminoid Toolbox，下载最新版本后解压并覆盖原来的展开即可。
+
+有关 Ruminoid Toolbox 的更新历史，请参见 [Toolbox 更新历史](./Version/ToolboxHistory.html)。
 
 ### 下载旧版本 Ruminoid Trimmer <Badge type="error" text="已弃用"/>
 

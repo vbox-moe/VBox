@@ -3,7 +3,21 @@ pageIndex: 2
 title: 更新历史
 ---
 
-这里是 Ruminoid 的更新历史，其中包含了 Ruminoid Dashboard、R/Connect 和其他所有 Ruminoid 产品的更新历史，但不包括 Ruminoid World。
+这里是 Ruminoid 的更新历史。
+
+此处包含的产品有：
+
+- Ruminoid（v0.2.x）
+
+- Ruminoid Studio（v0.3.x）
+
+- Ruminoid Dashboard、R/Connect 等 v0.2.x 以上的 Ruminoid 公共组件
+
+此处不包含的产品有：
+
+- Ruminoid World
+
+- [Ruminoid Toolbox](./ToolboxHistory.html)
 
 特定于通道的更新会在版本的右上角显示 Badge。标为“已弃用”的版本不推荐下载，因为这些版本的自动更新服务已经失效，或在更新到新版本之后旧的偏好设置会被清除。
 
