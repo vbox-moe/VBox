@@ -35,12 +35,6 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 有关 Ruminoid Toolbox 的更新历史，请参见 [Toolbox 更新历史](./Version/ToolboxHistory.html)。
 
-### 下载旧版本 Ruminoid Trimmer <Badge type="error" text="已弃用"/>
-
-我们不推荐下载任何已弃用的 Ruminoid 产品，因为这些版本的自动更新服务已经失效，或在更新到新版本之后旧的偏好设置会被清除。
-
-<select-button title="旧版 Ruminoid Trimmer（不推荐）" description="版本0.1.2" href="https://ruminoid.vbox.moe/res/trimmer/releases/Trimmer-Setup.exe" outer></select-button>
-
 ## 指南
 
 下面是 Ruminoid 的指南和教程部分。
