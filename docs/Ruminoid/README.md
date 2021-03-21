@@ -11,6 +11,8 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 ## 下载
 
+如果你要下载 SubLight、Trimmer 或 LIVE 等产品，请选择下方的「下载 Ruminoid（v0.2.x）」。如果你要下载 Ruminoid Toolbox，请选择下方的「下载 Ruminoid Toolbox」。
+
 ### 下载 Ruminoid（v0.2.x）
 
 轻敲下面的按钮即可下载 Ruminoid 的最新版本。
@@ -45,4 +47,4 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 ## 交流和讨论
 
-Ruminoid 相关交流和字幕相关交流可以加入群聊 470394928，Ruminoid 开发者可以加入群聊 1053354128。
+Ruminoid 相关交流和字幕相关交流可以加入群聊 470394928。
