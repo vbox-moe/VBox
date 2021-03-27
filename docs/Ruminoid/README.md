@@ -23,17 +23,13 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 ### 下载 Ruminoid Toolbox
 
-轻敲对应按钮即可下载 Ruminoid Toolbox 的最新版本。
+前往 Ruminoid Toolbox 下载中心：
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;">
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Windows" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip" outer></select-button>
-  <br>
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="MacOS" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip" outer></select-button>
-  <br>
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Linux" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip" outer></select-button>
-</div>
+<select-button title="Ruminoid Toolbox" description="下载中心" href="./Version/ToolboxDownload.html"></select-button>
 
 若要更新 Ruminoid Toolbox，下载最新版本后解压并覆盖原来的展开即可。
+
+有关 Ruminoid Toolbox 的常见问题，请参见 [Toolbox FAQ](./Guide/ToolboxReference/Faq.html)。
 
 有关 Ruminoid Toolbox 的更新历史，请参见 [Toolbox 更新历史](./Version/ToolboxHistory.html)。
 
