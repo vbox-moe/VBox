@@ -9,13 +9,11 @@ title: 下载 Ruminoid Toolbox
 
 如果要执行的是升级操作，在解压新版本的压缩包时直接选择「覆盖」即可。
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;">
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Windows" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip" outer></select-button>
-  <br>
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="MacOS" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip" outer></select-button>
-  <br>
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Linux" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip" outer></select-button>
-</div>
+类型|版本|下载
+-|-|-
+Windows 便携包|v0.2.4|[stable/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip)
+macOS 便携包|v0.2.4|[stable/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip)
+Linux 便携包|v0.2.4|[stable/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip)
 
 ## 其他可用的下载项
 
@@ -27,10 +25,8 @@ Beta 下载可用时，我们会在此处列出。
 
 如果你选择下载 LTS 版本的 Toolbox，你可以获得长期的技术支持，但你将无法使用任何缺失的功能。
 
-<div style="display:flex;justify-content:space-between;flex-wrap:wrap;">
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Windows" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/lts/rmbox-win.zip" outer></select-button>
-  <br>
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="MacOS" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/lts/rmbox-osx.zip" outer></select-button>
-  <br>
-  <select-button style="flex:1;margin:48px 20px;text-align:center;" title="Linux" href="https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/lts/rmbox-linux.zip" outer></select-button>
-</div>
+类型|版本|下载
+-|-|-
+Windows 便携包|v0.2.1|[lts/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/lts/rmbox-win.zip)
+macOS 便携包|v0.2.1|[lts/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/lts/rmbox-osx.zip)
+Linux 便携包|v0.2.1|[lts/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/lts/rmbox-linux.zip)
