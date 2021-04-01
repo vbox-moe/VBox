@@ -34,7 +34,7 @@
     "vuepress-theme-vbox": "^0.2.6"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dugite": "^1.91.3"
   }
 }
