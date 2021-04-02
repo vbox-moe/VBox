@@ -11,15 +11,23 @@ title: 下载 Ruminoid Toolbox
 
 类型|版本|下载
 -|-|-
-Windows 便携包|v0.2.4|[stable/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip)
-macOS 便携包|v0.2.4|[stable/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip)
-Linux 便携包|v0.2.4|[stable/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip)
+Windows 便携包|v0.2.6|[stable/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip)
+macOS 便携包|v0.2.6|[stable/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip)
+Linux 便携包|v0.2.6|[stable/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip)
 
 ## 其他可用的下载项
 
 ## Beta
 
-Beta 下载可用时，我们会在此处列出。
+Ruminoid Toolbox v0.3 Beta 现已可用。请参阅 [更新内容](./ToolboxHistory.html) 以查看此版本中更新的部分。
+
+类型|版本|下载
+-|-|-
+Windows 便携包|v0.3.1|[beta/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/beta/rmbox-win.zip)
+Windows 安装程序|v0.3.1|[beta/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/beta/rmbox-install.exe)
+macOS 便携包|v0.3.1|[beta/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/beta/rmbox-osx.zip)
+macOS 安装映像|v0.3.1|[beta/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/beta/rmbox-app.dmg)
+Linux 便携包|v0.3.1|[beta/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/beta/rmbox-linux.zip)
 
 ## LTS <Badge type="error" text="不推荐"/>
 

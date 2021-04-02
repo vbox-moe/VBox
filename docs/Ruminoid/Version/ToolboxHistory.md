@@ -7,6 +7,84 @@ title: Toolbox 更新历史
 
 特定于通道的更新会在版本的右上角显示 Badge。标为“已弃用”的版本不推荐下载，因为这些版本的自动更新服务已经失效，或在更新到新版本之后旧的偏好设置会被清除。
 
+## v0.3.1 <Badge type="warning" text="beta"/>
+
+2021-04-02 发布
+
+改进：
+
+- 现在，Rmbox 已经提供适用于 Windows 的安装器和适用于 macOS 的 App 映像！你可以双击 Windows 安装器或 App，方便地启动 Rmbox。
+
+修复：
+
+- Rmbox 现在依旧使用 .NET SDK v5.0.103 构建。这一行为将持续到 Microsoft 修复 .NET SDK v5.0.201 中的问题。
+
+## v0.2.6 <Badge text="stable"/>
+
+2021-04-02 发布
+
+改进：
+
+- 改进了「帮助」窗口的布局。
+
+- 操作运行器的运作方式得到了改进。
+
+- 现在，在输入可能导致操作运行失败的字符时，Rmbox 会给出警告。
+
+- 现在，Rmbox 支持自定义参数的自动填充。
+
+## v0.2.5
+
+2021-04-02 发布
+
+改进：
+
+- 现在，Rmbox 支持将文本或文件直接拖入「输入」或「字幕」窗口！在批量操作中，Rmbox 还支持拖入多个文件。
+
+- 现在，Rmbox 支持输出文件格式的自动填充。
+
+- 现在，在「帮助」窗口内的「插件」选项卡，你可以检视所有已经安装的插件，和它们的信息。
+
+修复：
+
+- 修复了一个问题，该问题会导致 Roslim 插件无法正确加载。
+
+## v0.3.0 <Badge type="warning" text="beta"/>
+
+2021-03-29 发布
+
+改进：
+
+- Rmbox 现在使用 .NET SDK v5.0.201 构建。
+
+- 现在，Rmbox 使用 `rmbenv` 实用程序作为启动器。`rmbenv` 在所有平台上的行为都是一致的，你可以在任何平台上使用相同的指令启动 Rmbox。`rmbenv` 还会自动准备启动 Rmbox 所需的环境。
+
+修复：
+
+- 修复了一个由 .NET SDK 引起的问题，该问题可能导致 Rmbox 在 macOS/Linux 上无法运行工具。
+
+## v0.2.4
+
+2021-04-01 发布
+
+改进：
+
+- Rmbox Shell 的 UI 得到了多处改进。现在，列表在列表的整个可视区域范围内都可以滚动，并且将会按照物理逻辑滚动（而非虚拟逻辑）。
+
+- 为 Rmbox Shell 添加了默认的回滚表情字体。
+
+- 改进了「帮助」窗口的布局。
+
+SDK：
+
+- 现在，「命令」使用全新的 TaskCommand Record。TaskCommand 和原 ValueTuple 之间有双向的隐式转换，因此原语法仍旧可用。
+
+- `PathExtension` 类内新增了多项用于格式化和处理 `path` 字段的工具函数。
+
+修复：
+
+- 修复了一个问题，该问题可能导致 Roslim 插件在加载时崩溃。
+
 ## v0.2.3
 
 2021-03-27 发布
@@ -53,7 +131,7 @@ title: Toolbox 更新历史
 
 2021-03-21 发布
 
-请注意，`v0.2.1` 版 Ruminoid Toolbox 是不带有 <Badge text="beta"/> 标签的稳定版。这也是 Ruminoid Toolbox 的第一个稳定版本。在 `v0.2.1` 版内，大部分功能都已经可以稳定使用。
+请注意，`v0.2.1` 版 Ruminoid Toolbox 是不带有 `beta` 标签的稳定版。这也是 Ruminoid Toolbox 的第一个稳定版本。在 `v0.2.1` 版内，大部分功能都已经可以稳定使用。
 
 改进：
 
@@ -81,7 +159,7 @@ SDK：
 
 - 现在，使用 `FFMpeg` 工具时将会自动覆盖文件，而不会在控制台中询问了。
 
-## v0.2.0 <Badge text="beta"/>
+## v0.2.0 <Badge type="warning" text="beta"/>
 
 2021-03-20 发布
 
@@ -117,7 +195,7 @@ SDK：
 
 - 修复了若干小的问题并提升了稳定性。
 
-## v0.1.6 <Badge text="beta"/>
+## v0.1.6 <Badge type="warning" text="beta"/>
 
 2021-03-14 发布
 
@@ -155,7 +233,7 @@ SDK：
 
 - 修复了一个问题，该问题会导致输入框中的中文字符显示为乱码。
 
-## v0.1.5 <Badge text="beta"/>
+## v0.1.5 <Badge type="warning" text="beta"/>
 
 2021-03-10 发布
 
@@ -189,7 +267,7 @@ SDK：
 
 - 修复了一个问题，该问题可能导致队列在停止的情况下遇到错误的任务之后无法再次启动。
 
-## v0.1.4 <Badge text="beta"/> <Badge text="stable"/>
+## v0.1.4 <Badge text="stable"/>
 
 2021-02-27 发布
 
@@ -197,7 +275,7 @@ SDK：
 
 - 修复了插件无法正确加载的问题。
 
-## v0.1.3 <Badge text="beta"/>
+## v0.1.3 <Badge type="warning" text="beta"/>
 
 2021-02-27 发布
 
@@ -225,7 +303,7 @@ SDK：
 
 - 修复了队列视图中任务提示可能会重叠的问题。
 
-## v0.1.2 <Badge text="beta"/>
+## v0.1.2 <Badge type="warning" text="beta"/>
 
 2021-02-26 发布
 
@@ -249,7 +327,7 @@ SDK：
 
 - <Badge type="error" text="wontfix"/> 某些 Linux 发行版上遇到的「Default font family name can't be null or empty」问题为发行版的字体缺失导致。尝试安装「ttf-mscorefonts-installer」或「ubuntu-restricted-extra」可能解决此问题。
 
-## v0.1.1 <Badge text="beta"/>
+## v0.1.1 <Badge type="warning" text="beta"/>
 
 2021-02-25 发布
 
@@ -257,7 +335,7 @@ SDK：
 
 - 添加了「关于」页和版本号的显示。
 
-## v0.1.0 <Badge text="beta"/>
+## v0.1.0 <Badge type="warning" text="beta"/>
 
 2021-02-25 发布
 
