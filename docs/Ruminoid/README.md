@@ -29,6 +29,8 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 若要更新 Ruminoid Toolbox，下载最新版本后解压并覆盖原来的展开即可。
 
+有关在 Ruminoid Toolbox 内排除错误，请参加 [Toolbox 除错指南](./Guide/ToolboxReference/Debug.html)。
+
 有关 Ruminoid Toolbox 的常见问题，请参见 [Toolbox FAQ](./Guide/ToolboxReference/Faq.html)。
 
 有关 Ruminoid Toolbox 的更新历史，请参见 [Toolbox 更新历史](./Version/ToolboxHistory.html)。
