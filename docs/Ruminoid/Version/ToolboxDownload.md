@@ -9,11 +9,11 @@ title: 下载 Ruminoid Toolbox
 
 类型|版本|下载
 -|-|-
-Windows 便携包|v0.3.2|[stable/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip)
-Windows 安装程序|v0.3.2|[stable/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-install.exe)
-macOS 便携包|v0.3.2|[stable/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip)
-macOS 安装映像|v0.3.2|[stable/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-app.dmg)
-Linux 便携包|v0.3.2|[stable/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip)
+Windows 便携包|v0.3.3|[stable/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-win.zip)
+Windows 安装程序|v0.3.3|[stable/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-install.exe)
+macOS 便携包|v0.3.3|[stable/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-osx.zip)
+macOS 安装映像|v0.3.3|[stable/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-app.dmg)
+Linux 便携包|v0.3.3|[stable/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/stable/rmbox-linux.zip)
 
 ## 其他可用的下载项
 
