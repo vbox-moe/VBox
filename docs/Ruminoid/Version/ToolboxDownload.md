@@ -19,7 +19,17 @@ Linux 便携包|v0.3.3|[stable/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-
 
 ### Beta
 
-Beta 下载可用时，我们会在此处列出。
+#### v0.4.0
+
+2021-04-18 发布
+
+类型|版本|下载
+-|-|-
+Windows 便携包|v0.4.0|[v0.4.0/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-win.zip)
+Windows 安装程序|v0.4.0|[v0.4.0/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-install.exe)
+macOS 便携包|v0.4.0|[v0.4.0/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-osx.zip)
+macOS 安装映像|v0.4.0|[v0.4.0/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-app.dmg)
+Linux 便携包|v0.4.0|[v0.4.0/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.0/rmbox-linux.zip)
 
 ### LTS <Badge type="error" text="不推荐"/>
 
