@@ -21,15 +21,21 @@ title: 更新历史
 
 特定于通道的更新会在版本的右上角显示 Badge。标为“已弃用”的版本不推荐下载，因为这些版本的自动更新服务已经失效，或在更新到新版本之后旧的偏好设置会被清除。
 
-## v0.2.6 <Badge type="warning" text="dogfood"/>
+## v0.2.6
 
-Build 9
+Build 9 - 2021-04-24 发布
 
-### Ruminoid Tapper Timer
+### Ruminoid SubLight Classic
+
+修复：
+
+- 现在，Ruminoid SubLight Classic 的闪屏问题已经得到了修复。
+
+### Ruminoid Tapper Timer <Badge type="warning" text="dogfood"/>
 
 Ruminoid Tapper Timer 现已发布！使用 Tapper Timer 可以一边看直播一边打轴，快来尝试吧。
 
-### Ruminoid
+### Ruminoid <Badge type="warning" text="dogfood"/>
 
 - 添加了新的 KeyTap 支持库。
 
