@@ -23,7 +23,7 @@ title: 更新历史
 
 ## v0.2.7
 
-Build 9 - 2021-04-27 发布
+Build 10 - 2021-04-27 发布
 
 ### Ruminoid SubLight Classic
 
