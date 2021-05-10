@@ -31,6 +31,24 @@ macOS 便携包|v0.4.1|[v0.4.1/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.
 macOS 安装映像|v0.4.1|[v0.4.1/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.1/rmbox-app.dmg)
 Linux 便携包|v0.4.1|[v0.4.1/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.4.1/rmbox-linux.zip)
 
+#### v0.5.0
+
+2021-05-10 发布
+
+::: danger 警告
+
+Rmbox 的 v0.5.x 分支处于早期发布阶段。目前的版本可能会存在严重的问题，我们不保证程序不会对你的设备造成问题。
+
+:::
+
+类型|版本|下载
+-|-|-
+Windows 便携包|v0.5.0|[v0.5.0/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.0/rmbox-win.zip)
+Windows 安装程序|v0.5.0|[v0.5.0/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.0/rmbox-install.exe)
+macOS 便携包|v0.5.0|[v0.5.0/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.0/rmbox-osx.zip)
+macOS 安装映像|v0.5.0|[v0.5.0/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.0/rmbox-app.dmg)
+Linux 便携包|v0.5.0|[v0.5.0/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.0/rmbox-linux.zip)
+
 ### LTS <Badge type="error" text="不推荐"/>
 
 如果你选择下载 LTS 版本的 Toolbox，你可以获得长期的技术支持，但你将无法使用任何缺失的功能。
