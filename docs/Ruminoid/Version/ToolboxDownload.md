@@ -7,17 +7,17 @@ title: 下载 Ruminoid Toolbox
 
 直接点击下面的按钮下载 Ruminoid Toolbox。对于安装包和 App 映像，直接双击即可使用。对于便携包，待下载完成后解压即可使用。如果要执行的是升级操作，在解压新版本的压缩包时直接选择「覆盖」即可。
 
-最新版本：v0.5.3
+最新版本：v0.5.4
 
-2021-06-27 发布
+2021-07-04 发布
 
 类型|版本|下载
 -|-|-
-Windows 便携包|v0.5.3|[v0.5.3/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.3/rmbox-win.zip)
-Windows 安装程序|v0.5.3|[v0.5.3/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.3/rmbox-install.exe)
-macOS 便携包|v0.5.3|[v0.5.3/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.3/rmbox-osx.zip)
-macOS 安装映像|v0.5.3|[v0.5.3/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.3/rmbox-app.dmg)
-Linux 便携包|v0.5.3|[v0.5.3/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.3/rmbox-linux.zip)
+Windows 便携包|v0.5.4|[v0.5.4/rmbox-win.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-win.zip)
+Windows 安装程序|v0.5.4|[v0.5.4/rmbox-install.exe](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-install.exe)
+macOS 便携包|v0.5.4|[v0.5.4/rmbox-osx.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-osx.zip)
+macOS 安装映像|v0.5.4|[v0.5.4/rmbox-app.dmg](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-app.dmg)
+Linux 便携包|v0.5.4|[v0.5.4/rmbox-linux.zip](https://vbox-down-a.obs.cn-east-3.myhuaweicloud.com/rmbox/v0.5.4/rmbox-linux.zip)
 
 ## 其他可用的下载项
 
