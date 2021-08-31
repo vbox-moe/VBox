@@ -33,8 +33,6 @@ footer: MIT Licensed | Copyright © 2020 Il Harper
 
 有关 Ruminoid Toolbox 的常见问题，请参见 [Toolbox FAQ](./Guide/ToolboxReference/Faq.html)。
 
-有关 Ruminoid Toolbox 的更新历史，请参见 [Toolbox 更新历史](./Version/ToolboxHistory.html)。
-
 ## 指南
 
 下面是 Ruminoid 的指南和教程部分。
